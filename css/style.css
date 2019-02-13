@@ -4,8 +4,16 @@
 #header img{
    width: 100%;
 }
-#header .col-md-8 img{
+#header .col-md-9{
+   padding-left: 0px;
+   padding-right: 1px;
+}
+#header .col-md-9 img{
    height:100%;
+}
+#header .col-md-3{
+   padding-left: 1px;
+   padding-right: 0px;
 }
 .centered {
   position: absolute;
@@ -19,8 +27,12 @@
    font-weight:900;
    font-size: 50px;
 }
+#header a{
+   font-family: 'Roboto', sans-serif;
+}
 #header .btn{
    font-family: 'Roboto', sans-serif;
+   border-radius:0px;
 }
 
 /*-------------------------------
@@ -134,22 +146,71 @@
    Footer Section
 --------------------------------*/
 footer{
-   background-image: url('../images/footer_section1.jpeg');
+   /* background-image: url('../images/footer_section1.png');
    background-size: cover;
    background-position: center;
-   background-repeat: no-repeat;
+   background-repeat: no-repeat; */
    padding-left: 0px!important;
    padding-right: 0px!important;
 }
 footer #footer_background{
-   background-color: rgba(0, 0, 0, 0.5);
    padding-top: 20px;
+}
+#footer_content{
+   background-color:#eee;
+   padding-top: 25px;
+   padding-bottom: 20px;
+}
+#footer_content img{
+   width:170px;
+   height:170px;
 }
 #footer_content a{
    font-family: 'Roboto', sans-serif;
-   color:white;
+   color: #333;
+   font-size: 18px;
+}
+#footer_social_media{
+   background-color: #eee;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+#footer_social_media .col-md-10{
+   border-top: 1px solid #333;
+   padding-top: 20px;
+}
+#footer_social_media .col-md-10 .fab{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+#footer_social_media .fab:hover {
+   opacity: 0.7;
+}
+#footer_social_media .fa-facebook {
+   background: #3B5998;
+   color: white;
+}
+#footer_social_media .fa-twitter{
+   background: #55ACEE;
+   color: white;
+}
+#footer_social_media .fa-google {
+   background: #dd4b39;
+   color: white;
+}
+#footer_social_media .fa-instagram {
+   background: #125688;
+   color: white;
+}
+#footer_copyright{
+   background-color:#333;
+   padding-top: 15px;
 }
 #footer_copyright p{
    font-family: 'Roboto', sans-serif;
    color:white;
+   font-size: 13px;
 }
