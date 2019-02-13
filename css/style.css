@@ -1,0 +1,9 @@
+/*-------------------------------
+   Values Section
+--------------------------------*/
+#values{
+   background-image: url('../images/values_section1.jpeg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
