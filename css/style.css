@@ -1,3 +1,24 @@
+
+/*-------------------------------
+   Mission Section
+--------------------------------*/
+#mission{
+   padding-top:80px;
+   padding-bottom:80px;
+}
+#mission .card-group .col-md-3{
+   padding-right:0px;
+   padding-left:0px;
+}
+
+/*-------------------------------
+   Role Section
+--------------------------------*/
+#role{
+   padding-top:80px;
+   padding-bottom:80px;
+}
+
 /*-------------------------------
    Values Section
 --------------------------------*/
@@ -6,4 +27,6 @@
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+   padding-top:80px;
+   padding-bottom:80px;
 }
