@@ -17,10 +17,16 @@
 }
 .centered {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+}
+
+.centered img{
+   height: 150px !important;
+   width: auto !important;
 }
 #header h1{
    font-family: 'Roboto', sans-serif;
@@ -38,6 +44,19 @@
    border-radius:0px;
 }
 
+/*-------------------------------
+   Donate Section
+--------------------------------*/
+
+.btn-block{
+   border: solid blue 2px;
+   margin: 20% auto 0 auto ;
+   width: 50%
+}
+
+.donate-img .btn{
+   background: #0A5378
+}
 /*-------------------------------
    Mission Section
 --------------------------------*/
@@ -184,7 +203,7 @@ footer #footer_background{
 }
 #footer_social_media .col-md-10 .fab{
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -216,4 +235,135 @@ footer #footer_background{
    font-family: 'Roboto', sans-serif;
    color:white;
    font-size: 13px;
+}
+
+#footer_copyright span{
+   color: #55ACEE
+}
+
+
+/*-------------------------------
+   Screen under 600px
+--------------------------------*/
+
+
+@media screen and (max-width:600px){
+
+   .container-fluid{
+      width: 90%
+   }
+
+   #header h1{
+      font-weight:600;
+      font-size: 25px;
+   }
+
+   .centered img{
+      height: 80px !important;
+      width: auto !important;
+   }
+
+   #mission_header h1{
+      font-weight:600;
+      font-size: 25px;
+   }
+
+   #hide{
+      display: none;
+   }
+
+   #mission_header p{
+      font-weight:500;
+      font-size: 16px;
+   }
+
+   #card_content h4{
+      font-weight:600;
+      font-size: 22px;
+      color:white;
+   }
+   #card_content a{
+      color:white;
+      font-size: 85px;
+   }
+   
+   #role_section_header h1{
+      font-weight:600;
+      font-size: 25px;
+   }
+   #role_section_header p{
+      font-size: 16px;
+   }
+ 
+   #role_section_content p{
+      font-size: 14px;
+   }
+
+   #role_section_content .fas{
+      font-size: 85px;
+      padding: 20px
+   }
+
+   #role_section_content .fab{
+      font-size: 85px
+
+   }
+
+   #role_section_content .btn{
+      font-size: 12px
+   }
+
+   #values_header h1{
+      font-weight:600;
+      font-size: 25px;
+   }
+   #values_header p{
+      font-size: 18px;
+   }
+   #values_content h2{
+      font-size: 25px;
+   }
+   #values_content p{
+      font-size: 16px;
+   }
+
+   #sponsors img{
+      width:80%;
+   }
+   #sponsors h1{
+      font-weight:600;
+      font-size: 25px;
+   }
+
+
+   #footer_content img{
+      width:170px;
+      height:170px;
+   }
+   #footer_content a{
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-size: 16px;
+   }
+
+  
+   #footer_social_media .col-md-10 .fab{
+     padding: 20px;
+     font-size: 12px;
+   }
+  
+   #footer_copyright{
+      background-color:#333;
+      padding-top: 15px;
+   }
+   #footer_copyright p{
+      font-family: 'Roboto', sans-serif;
+      color:white;
+      font-size: 12px;
+   }
+   
+   #footer_copyright span{
+      color: #55ACEE
+   }
+      
 }
