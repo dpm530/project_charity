@@ -45,13 +45,16 @@
 
 @media screen and (max-width: 415px){
    #header .col-md-9 .centered img{
-      width:100px;
+      width:80px;
    }
    #header .col-md-9 .centered h1{
-      font-size: 22px;
+      font-size: 13px;
    }
    #header .col-md-9 .centered .btn{
       font-size: 7px;
+   }
+   #header .col-md-3 img{
+      display:none;
    }
 }
 
@@ -77,7 +80,8 @@
 }
 #card_content .card-img-overlay{
    top: 50px!important;
-   display: inline-table;
+   /* display: inline-table; */
+   max-height: 265px;
 }
 #card_content h4{
    font-family: 'Roboto', sans-serif;
@@ -97,6 +101,15 @@
 }
 #card_content .card-img-top:hover{
    filter: brightness(100%) grayscale(0%);
+}
+
+@media screen and (max-width: 415px){
+   #mission_header h1{
+      font-size: 32px;
+   }
+   #mission_header p{
+      font-size:16px;
+   }
 }
 
 /*-------------------------------
@@ -127,6 +140,15 @@
 }
 #role_section_content .btn{
    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 415px){
+   #role_section_header h1{
+      font-size: 25px;
+   }
+   #role_section_header p{
+      font-size: 20px;
+   }
 }
 
 /*-------------------------------
@@ -176,6 +198,11 @@
    font-family: 'Roboto', sans-serif;
    font-weight:900;
    font-size: 50px;
+}
+@media screen and (max-width: 415px){
+   #sponsors h1{
+      font-size: 24px;
+   }
 }
 
 /*-------------------------------
@@ -249,4 +276,10 @@ footer #footer_background{
    font-family: 'Roboto', sans-serif;
    color:white;
    font-size: 13px;
+}
+
+@media screen and (max-width: 415px){
+   #footer_content #mobile{
+      display:none;
+   }
 }
