@@ -1,19 +1,21 @@
 /*-------------------------------
    Header Section
 --------------------------------*/
-#header img{
-   width: 100%;
-}
 #header .col-md-9{
    padding-left: 0px;
    padding-right: 1px;
 }
-#header .col-md-9 img{
+#header .col-md-9 #background_img{
    height:100%;
+   width: 100%;
 }
 #header .col-md-3{
-   padding-left: 1px;
+   padding-left: 0px;
    padding-right: 0px;
+   background-color: #d6d5d5
+}
+#header .col-md-3 img{
+   width: 100%;
 }
 .centered {
   position: absolute;
@@ -27,15 +29,30 @@
    font-weight:900;
    font-size: 50px;
 }
-#header a{
+#header .col-md-9 a{
    font-family: 'Roboto', sans-serif;
    color:#fff;
    border:1px solid #fff;
 
 }
-#header .btn{
+#header .col-md-3 .btn{
    font-family: 'Roboto', sans-serif;
-   border-radius:0px;
+   border-radius:25px;
+   margin-top: 10px;
+   color:white;
+   background-color:#005696;
+}
+
+@media screen and (max-width: 415px){
+   #header .col-md-9 .centered img{
+      width:100px;
+   }
+   #header .col-md-9 .centered h1{
+      font-size: 22px;
+   }
+   #header .col-md-9 .centered .btn{
+      font-size: 7px;
+   }
 }
 
 /*-------------------------------
@@ -58,15 +75,28 @@
    font-weight:900;
    font-size: 22px;
 }
+#card_content .card-img-overlay{
+   top: 50px!important;
+   display: inline-table;
+}
 #card_content h4{
    font-family: 'Roboto', sans-serif;
-   font-weight:900;
    font-size: 30px;
-   color:white;
+   color:#e2e2e2;
 }
-#card_content a{
-   color:white;
+#card_content i{
+   color:#e2e2e2;
    font-size: 85px;
+   border-radius: 50%;
+   padding:25px;
+   border: 2px solid #e2e2e2;
+}
+#card_content .card-img-top{
+   filter: brightness(40%) grayscale(100%);
+   transition: filter 0.8s;
+}
+#card_content .card-img-top:hover{
+   filter: brightness(100%) grayscale(0%);
 }
 
 /*-------------------------------
@@ -86,7 +116,10 @@
    font-size: 22px;
 }
 #role_section_content i{
-
+   color: white;
+   padding: 35px;
+   background-color: #005696;
+   border-radius: 50%;
 }
 #role_section_content p{
    font-family: 'Roboto', sans-serif;
