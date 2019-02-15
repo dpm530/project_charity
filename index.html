@@ -12,6 +12,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
       <title>Index</title>
+      <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
    </head>
    <body>
 
@@ -28,7 +29,9 @@
             <div class="col-md-3">
                <img src="images/header_section2.jpeg" alt="">
                <img src="images/header_section3.jpeg" alt="">
-               <a href="#" class="btn btn-lg btn-block">Donar</a>
+               <div id="paypal-button-container"></div>
+
+               <div><script>paypal.Buttons().render('#paypal-button-container');</script></div>
                <a href="#" class="btn btn-lg btn-block">Voluntarios</a>
                <a href="#" class="btn btn-lg btn-block">Unete al Movimiento</a>
             </div>
