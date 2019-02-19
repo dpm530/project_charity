@@ -53,8 +53,16 @@
    #header .col-md-9 .centered .btn{
       font-size: 7px;
    }
+   #header .col-md-3{
+      padding-bottom: 15px;
+   }
    #header .col-md-3 img{
       display:none;
+   }
+   #header .btn-block{
+      width: 75%;
+      display: inline-block;
+
    }
 }
 
