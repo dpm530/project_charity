@@ -12,8 +12,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
       <title>Index</title>
-      <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
    </head>
    <body>
 
@@ -30,11 +28,12 @@
             <div class="col-md-3">
                <img src="images/charity1.png" alt="">
                <img src="images/charity3.png" alt="">
-               <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-               <div class="elfsight-app-ab9fc3d5-bd15-49e2-abd2-2b22fe9332d2"></div>
-               <div><script>paypal.Buttons().render('#paypal-button-container');</script></div>
-               <a href="#" class="btn btn-lg btn-block">Voluntarios</a>
-               <a href="#" class="btn btn-lg btn-block">Unete al Movimiento</a>
+               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="donate-button-container">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="EYXTKJSB344EQ" />
+                  <input type="image" class="donate-button" src="https://res.cloudinary.com/medina/image/upload/v1550798139/donate-button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+               </form>                 
             </div>
          </div>
       </div>

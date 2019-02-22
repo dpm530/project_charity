@@ -12,8 +12,8 @@
 #header .col-md-3{
    padding-left: 0px;
    padding-right: 0px;
-   background-color: #d6d5d5
 }
+
 #header .col-md-3 img{
    width: 100%;
 }
@@ -41,6 +41,19 @@
    margin-top: 10px;
    color:white;
    background-color:#005696;
+}
+
+.donate-button-container{
+   text-align: center;
+   background-color: #F4812C
+
+}
+/* 
+.donate-button{
+} */
+
+.donate-button:hover{
+   cursor: pointer;
 }
 
 @media screen and (max-width: 415px){
