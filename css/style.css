@@ -35,23 +35,30 @@
    border:1px solid #fff;
 
 }
-#header .col-md-3 .btn{
+/* #header .col-md-3 .btn{
    font-family: 'Roboto', sans-serif;
    border-radius:25px;
    margin-top: 10px;
    color:white;
    background-color:#005696;
-}
+} */
 
 .donate-button-container{
    text-align: center;
-   background-color: #F4812C
+   background-color: #04A65C;
+   padding: 5%;
+}
+
+.button-header{
+   width: 100%;
+   color: white;
+   margin: 50px 0px 30px 0px
 
 }
-/* 
-.donate-button{
-} */
 
+.donate-button{
+   margin-bottom: 30px
+}
 .donate-button:hover{
    cursor: pointer;
 }
