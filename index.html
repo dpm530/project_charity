@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
-      <script type="text/javascript" src="javascript/main.js"></script>
+      <link rel="icon" type="image/png" href="images/tab-logo.png">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
@@ -17,23 +17,25 @@
 
       <div id="header" class="container-fluid">
          <div class="row">
-            <div class="col-md-9 text-center">
+            <div class="col-12 col-md-9 text-center">
                   <img id="background_img" src="images/charity2.png" alt="">
                   <div class="centered">
                      <img src="images/visiones-unidas-logo.png" alt="">
-                     <h1>TRANSFORMANDO COMUNIDADES!</h1>
+                     <h1>TRANSFORMANDO COMUNIDADES</h1>
                   </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-md-3">
                <img src="images/charity1.png" alt="">
-               <img src="images/charity3.png" alt="">
+               <img class="img2" src="images/charity3.png" alt="">
                <div class="donate-button-container">
-                  <div class="button-header"><h3>Apoya Nuestra Causa</h3></div>
+                  <div class="button-header">
+                     <h3>Apoya Nuestra Causa!</h3>
+                  </div>
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                      <input type="hidden" name="cmd" value="_s-xclick" />
                      <input type="hidden" name="hosted_button_id" value="2RW97MWEXN39N" />
                      <input type="image" class="donate-button" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                     <img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" />
+                     <!-- <img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" /> -->
                   </form>
                </div>
             </div>
@@ -49,7 +51,6 @@
             </div>
             <div class="col-md-1"></div>
          </div>
-         <br>
          <div id="card_content" class="row">
             <div class="card-group">
                <div class="col-md-3">
@@ -57,7 +58,7 @@
                   <div class="card-img-overlay text-center">
                      <h4 class="card-title">Servicios de Salud</h4>
                      <br>
-                     <a href="#"><i class="fas fa-clinic-medical"></i></a>
+                     <a><i class="fas fa-clinic-medical"></i></a>
                   </div>
                </div>
                <div class="col-md-3">
@@ -65,7 +66,7 @@
                   <div class="card-img-overlay text-center">
                      <h4 class="card-title">Trabajo Comunitario</h4>
                      <br>
-                     <a href="#"><i class="fas fa-hands-helping"></i></a>
+                     <a><i class="fas fa-hands-helping"></i></a>
                   </div>
                </div>
                <div class="col-md-3">
@@ -73,7 +74,7 @@
                   <div class="card-img-overlay text-center">
                      <h4 class="card-title">Ayuda sin Fronteras</h4>
                      <br>
-                     <a href="#"><i class="fas fa-globe-americas"></i></a>
+                     <a><i class="fas fa-globe-americas"></i></a>
                   </div>
                </div>
                <div class="col-md-3">
@@ -81,163 +82,37 @@
                   <div class="card-img-overlay text-center">
                      <h4 class="card-title">Trabajo y Ayuda</h4>
                      <br>
-                     <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                     <a><i class="fas fa-hand-holding-heart"></i></a>
                   </div>
                </div>
             </div>
          </div>
       </div>
-<!--
-      <div id="role" class="container-fluid">
-         <div class="row">
-            <div class="col-md-2"></div>
-            <div id="role_section_header" class="col-12 col-md-8 text-center">
-               <h1>TODOS JUEGAN UN ROL EN PRO DE UNA MISMA VISION</h1>
-               <p>Juntos contribuimos a contstruir una vida de calidad para todos.</p>
-            </div>
-            <div class="col-md-2"></div>
-         </div>
-         <br><br>
-         <div id="role_section_content" class="row">
-            <div class="col-md-4">
-               <div class="row">
-                  <div class="col-md-12 text-center">
-                     <a href="#"><i class="fab fa-leanpub fa-10x"></i></a>
-                  </div>
-               </div>
-               <br>
-               <div class="row">
-                  <div class="col-md-12 text-center">
-                     <p>Aprende acerca de los obstaculos que ciertas comunidades enfrentan.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="row">
-                  <div class="col-md-12 text-center">
-                     <a href="#"><i class="fas fa-money-bill-wave-alt fa-10x"></i></a>
-                  </div>
-               </div>
-               <br>
-               <div class="row">
-                  <div class="col-md-12 text-center">
-                     <p>Tu apoyo hace posible que estos programas sociales existan.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="row">
-                  <div class="col-md-12 text-center">
-                     <a href="#"><i class="fas fa-bullhorn fa-10x"></i></a>
-                  </div>
-               </div>
-               <br>
-               <div class="row">
-                  <div class="col-md-12 text-center">
-                     <p>Aprende como compartit informacion para dar a conocer problemas socio-economicos.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div id="values" class="container-fluid">
-         <div class="row">
-            <div class="col-md-1"></div>
-            <div id="values_header" class="col-md-10 text-center">
-               <h1>QUE NOS GUIA?</h1>
-               <p>Estos valores guian la vision de nuestra organizacion.</p>
-            </div>
-            <div class="col-md-1"></div>
-         </div>
-         <br>
-         <div id="values_content" class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 text-center">
-               <h2>INTERCONEXION</h2>
-               <p>Lorem Khaled Ipsum is a major key to success. The first of the month is coming, we have to get money, we have no choice.</p>
-            </div>
-            <div class="col-md-5 text-center">
-               <h2>SOLIDARIDAD</h2>
-               <p>Lorem Khaled Ipsum is a major key to success. The first of the month is coming, we have to get money, we have no choice.</p>
-            </div>
-            <div class="col-md-1"></div>
-         </div>
-         <br>
-         <div id="values_content" class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 text-center">
-               <h2>RESISTENCIA</h2>
-               <p>Lorem Khaled Ipsum is a major key to success. The first of the month is coming, we have to get money, we have no choice.</p>
-            </div>
-            <div class="col-md-5 text-center">
-               <h2>FIRMEZA DE CARACTER</h2>
-               <p>Lorem Khaled Ipsum is a major key to success. The first of the month is coming, we have to get money, we have no choice.</p>
-            </div>
-            <div class="col-md-1"></div>
-         </div>
-         <br>
-         <div id="values_content" class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 text-center">
-               <h2>JUSTICIA</h2>
-               <p>Lorem Khaled Ipsum is a major key to success. The first of the month is coming, we have to get money, we have no choice.</p>
-            </div>
-            <div class="col-md-5 text-center">
-               <h2>IDEALISMO</h2>
-               <p>Lorem Khaled Ipsum is a major key to success. The first of the month is coming, we have to get money, we have no choice.</p>
-            </div>
-            <div class="col-md-1"></div>
-         </div>
-      </div>
-      <br>
-      <div id="sponsors" class="container-fluid">
-         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-12 col-md-10 text-center">
-               <h1>NUESTROS PATROCINADORES</h1>
-            </div>
-            <div class="col-md-1"></div>
-         </div>
-         <br>
-         <div class="row">
-            <div class="col-md-3">
-               <img src="images/sponsors_section2.jpg" alt="">
-            </div>
-            <div class="col-md-3">
-               <img src="images/sponsors_section2.jpg" alt="">
-            </div>
-            <div class="col-md-3">
-               <img src="images/sponsors_section2.jpg" alt="">
-            </div>
-            <div class="col-md-3">
-               <img src="images/sponsors_section2.jpg" alt="">
-            </div>
-         </div>
-      </div> -->
 
       <footer class="container-fluid">
          <div id="footer_background" class="container-fluid">
             <div id="footer_content" class="row">
-               <div class="col-6 col-md-4 text-center">
+               <div class="col-5 col-md-6 text-center">
                   <img src="images/visiones-unidas-logo.png" alt="">
                </div>
-               <div class="col-6 col-md-4 text-center">
-                  <p><a href="">Nosotros</a></p>
-                  <p><a href="">Nuestros Proyectos</a></p>
-                  <p><a href="">Recursos</a></p>
-                  <p><a href="">Contactanos</a></p>
+               <div id="footer_middle" class="col-7 col-md-6">
+                  <ul>
+                     <a href="#"><li>Nosotros</li></a>
+                     <a href="#"><li>Nuestros Proyectos</li></a>
+                     <a href="#"><li>Recursos</li></a>
+                     <a href="#"><li>Contactanos</li></a>
+                  </ul>
                </div>
-               <div id="mobile" class="col-md-4">
+               <!-- <div id="mobile" class="col-md-6">
                   <p><a href="">Donaciones: donkrim@projectcharity.org</a></p>
                   <p><a href="">​Instrucotres: mentors@projectcharity.org</a></p>
                   <p><a href="">Voluntarios:  volunteers@projectcharity.org</a></p>
                   <p><a href="">Consultas: info@projectcharity.org</a></p>
-               </div>
+               </div> -->
             </div>
             <div id="footer_social_media" class="row">
                <div class="col-md-1"></div>
-               <div class="col-md-10 text-center">
+               <div class="col-12 col-md-10 text-center">
                   <a href="" class="fab fa-facebook"></a>
                   <a href="#" class="fab fa-twitter"></a>
                   <a href="#" class="fab fa-google"></a>
@@ -247,8 +122,8 @@
             </div>
             <div id="footer_copyright" class="row">
                <div class="col-md-2"></div>
-               <div class="col-md-8 text-center">
-                  <p>Copyright &copy; All Rights Reserved 2019 | Design & Development by IPQtech, LLC</p>
+               <div class="col-12 col-md-8 text-center">
+                  <p>Copyright &copy; All Rights Reserved 2019 | Design & Development by IPQ, LLC</p>
                </div>
                <div class="col-md-2"></div>
             </div>

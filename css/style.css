@@ -3,7 +3,7 @@
 --------------------------------*/
 #header .col-md-9{
    padding-left: 0px;
-   padding-right: 1px;
+   padding-right: 2px;
 }
 #header .col-md-9 #background_img{
    height:100%;
@@ -17,9 +17,12 @@
 #header .col-md-3 img{
    width: 100%;
 }
+#header .img2{
+   padding-top: 2px;
+}
 .centered {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -28,6 +31,7 @@
    font-family: 'Roboto', sans-serif;
    font-weight:900;
    font-size: 50px;
+   text-shadow: 2px 2px 2px #000000;
 }
 #header .col-md-9 a{
    font-family: 'Roboto', sans-serif;
@@ -35,54 +39,91 @@
    border:1px solid #fff;
 
 }
-/* #header .col-md-3 .btn{
-   font-family: 'Roboto', sans-serif;
-   border-radius:25px;
-   margin-top: 10px;
-   color:white;
-   background-color:#005696;
-} */
-
-.donate-button-container{
+#header .donate-button-container{
    text-align: center;
    background-color: #04A65C;
    padding: 5%;
+   margin-top: 2px;
+   border-radius: 8px;
 }
 
-.button-header{
+#header .button-header{
    width: 100%;
-   color: white;
    margin: 50px 0px 30px 0px
-
 }
-
-.donate-button{
-   margin-bottom: 30px
+#header .button-header h3{
+   font-family: 'Roboto', sans-serif;
+   font-size: 30px;
+   color:white;
 }
-.donate-button:hover{
+form .donate-button{
+   margin-bottom: 30px;
+   width: 210px;
+}
+form .donate-button:hover{
    cursor: pointer;
 }
 
+/* ------ | Mobile Phone |------- */
 @media screen and (max-width: 415px){
+
+   #header .row .col-md-9{
+      padding-right: 0px;
+   }
    #header .col-md-9 .centered img{
       width:80px;
    }
    #header .col-md-9 .centered h1{
-      font-size: 13px;
-   }
-   #header .col-md-9 .centered .btn{
-      font-size: 7px;
-   }
-   #header .col-md-3{
-      padding-bottom: 15px;
+      font-size: 25px;
+      text-shadow: 1px 1px 1px #000000;
    }
    #header .col-md-3 img{
       display:none;
    }
-   #header .btn-block{
-      width: 75%;
-      display: inline-block;
+   #header .button-header h3{
+      font-size: 25px;
+   }
+   form .donate-button{
+      width: 200px;
+   }
+}
 
+/*--------------------|  Tablet |----------------------- */
+@media screen and (min-width: 768px) and (min-height: 1024px){
+
+   form .donate-button{
+      width: 150px;
+   }
+   #mission #card_content h4 {
+      font-size: 15px;
+   }
+   #mission #card_content i {
+      font-size: 35px;
+   }
+
+}
+/*------------- |  Mobile Device Horrizontal |--------------- */
+@media screen and (min-height: 320px) and (max-width: 736px){
+
+   #header .row .col-md-9{
+      padding-right: 0px;
+   }
+   #header .col-md-3 img{
+      display:none;
+   }
+
+
+}
+@media screen and (min-width: 812px) and (max-width: 823px){
+
+   form .donate-button{
+      width: 150px;
+   }
+   #mission #card_content h4 {
+      font-size: 15px;
+   }
+   #mission #card_content i {
+      font-size: 35px;
    }
 }
 
@@ -91,10 +132,15 @@
 --------------------------------*/
 #mission{
    padding-top:80px;
+   padding-bottom:80px;
+   margin-bottom: 30px;
 }
 #mission .card-group .col-md-3{
    padding-right:0px;
    padding-left:0px;
+}
+#mission_header{
+   margin-bottom:45px;
 }
 #mission_header h1{
    font-family: 'Roboto', sans-serif;
@@ -107,13 +153,13 @@
    font-size: 22px;
 }
 #card_content .card-img-overlay{
-   top: 50px!important;
-   /* display: inline-table; */
+   top: 20%;
    max-height: 265px;
 }
 #card_content h4{
    font-family: 'Roboto', sans-serif;
    font-size: 30px;
+   font-weight: 900;
    color:#e2e2e2;
 }
 #card_content i{
@@ -127,7 +173,7 @@
    filter: brightness(40%) grayscale(100%);
    transition: filter 0.8s;
 }
-#card_content .card-img-top:hover{
+#card_content .col-md-3:hover .card-img-top{
    filter: brightness(100%) grayscale(0%);
 }
 
@@ -140,107 +186,11 @@
    }
 }
 
-/*-------------------------------
-   Role Section
---------------------------------*/
-#role{
-   padding-top:80px;
-   padding-bottom:80px;
-}
-#role_section_header h1{
-   font-family: 'Roboto', sans-serif;
-   font-weight:900;
-   font-size: 50px;
-}
-#role_section_header p{
-   font-family: 'Roboto', sans-serif;
-   font-size: 22px;
-}
-#role_section_content i{
-   color: white;
-   padding: 35px;
-   background-color: #005696;
-   border-radius: 50%;
-}
-#role_section_content p{
-   font-family: 'Roboto', sans-serif;
-   font-size: 18px;
-}
-#role_section_content .btn{
-   font-family: 'Roboto', sans-serif;
-}
-
-@media screen and (max-width: 415px){
-   #role_section_header h1{
-      font-size: 25px;
-   }
-   #role_section_header p{
-      font-size: 20px;
-   }
-}
-
-/*-------------------------------
-   Values Section
---------------------------------*/
-#values{
-   background-image: url('../images/values_section1.jpeg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   padding-top:80px;
-   padding-bottom:80px;
-}
-#values_header h1{
-   font-family: 'Roboto', sans-serif;
-   font-weight:900;
-   font-size: 50px;
-   color:white;
-}
-#values_header p{
-   font-family: 'Roboto', sans-serif;
-   font-size: 25px;
-   color:white;
-}
-#values_content h2{
-   font-family: 'Roboto', sans-serif;
-   color: white;
-   font-size: 40px;
-}
-#values_content p{
-   font-family: 'Roboto', sans-serif;
-   color:white;
-   font-size: 22px;
-}
-
-/*-------------------------------
-   Sponsors Section
---------------------------------*/
-#sponsors{
-   padding-top:80px;
-   padding-bottom:80px;
-}
-#sponsors img{
-   width:100%;
-}
-#sponsors h1{
-   font-family: 'Roboto', sans-serif;
-   font-weight:900;
-   font-size: 50px;
-}
-@media screen and (max-width: 415px){
-   #sponsors h1{
-      font-size: 24px;
-   }
-}
 
 /*-------------------------------
    Footer Section
 --------------------------------*/
 footer{
-   /* background-image: url('../images/footer_section1.png');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat; */
    padding-left: 0px!important;
    padding-right: 0px!important;
 }
@@ -249,7 +199,7 @@ footer #footer_background{
 }
 #footer_content{
    background-color:#eee;
-   padding-top: 25px;
+   padding-top: 40px;
    padding-bottom: 20px;
 }
 #footer_content img{
@@ -264,11 +214,11 @@ footer #footer_background{
 #footer_social_media{
    background-color: #eee;
    padding-top: 20px;
-   padding-bottom: 20px;
+   padding-bottom: 25px;
 }
 #footer_social_media .col-md-10{
    border-top: 1px solid #333;
-   padding-top: 20px;
+   padding-top: 25px;
 }
 #footer_social_media .col-md-10 .fab{
   padding: 20px;
@@ -296,18 +246,33 @@ footer #footer_background{
    background: #125688;
    color: white;
 }
+#footer_middle li{
+   list-style: none;
+   margin-left: 20%;
+   margin-bottom: 1rem;
+}
 #footer_copyright{
    background-color:#333;
    padding-top: 15px;
 }
 #footer_copyright p{
    font-family: 'Roboto', sans-serif;
-   color:white;
-   font-size: 13px;
+   color:#eee;
+   font-size: 12px;
 }
 
 @media screen and (max-width: 415px){
-   #footer_content #mobile{
+
+   /* #footer_content #mobile{
       display:none;
+   } */
+   #footer_content img{
+      width: 85px;
+      height: 105px;
+      margin-top: 30%;
    }
+   #footer_middle li{
+      margin-left: 0px;
+   }
+
 }
